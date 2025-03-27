@@ -1,0 +1,22 @@
+
+.searchbtn button {
+    width: 120px;
+    color: white;
+    background-color: gray;
+    border-radius: 5px;
+    border: none;
+}
+.range-container {
+    width: 100%;
+    max-width: 400px;
+    /* margin: 50px auto; */
+    text-align: center;
+}
+input[type="range"] {
+    width: 100%;
+}
+.range-values {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}

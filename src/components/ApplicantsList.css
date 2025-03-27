@@ -1,0 +1,155 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.applicants-container {
+  min-height: 100vh;
+  padding-bottom: 20px;
+  background-color: lightyellow;
+}
+
+
+.applicant-card {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin: 25px auto;
+  border: 1px solid brown;
+  background-color: #e8f5e9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.applicant-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.profile-pic {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 3px solid #ddd;
+}
+
+.applicant-info {
+  text-align: left;
+  flex-grow: 1;
+}
+
+.applicant-info h3 {
+  margin: 5px 0;
+  color: #1e3a8a;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.applicant-info p {
+  margin: 4px 0;
+  color: #222;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.accept-btn,
+.reject-btn {
+  padding: 8px 14px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.accept-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.reject-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.accept-btn:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.reject-btn:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+.status {
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.status.pending {
+  color: #ff9800;
+}
+
+.status.accepted {
+  color: #28a745;
+}
+
+.status.rejected {
+  color: #dc3545;
+}
+
+.loading,
+.error-msg {
+  font-size: 1.2rem;
+  color: #444;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .applicant-card {
+    width: 95%;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .profile-pic {
+    margin-right: 0;
+    margin-bottom: 5px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .action-buttons {
+    justify-content: center;
+  }
+
+  .applicant-info h3 {
+    font-size: 0.95rem;
+  }
+
+  .applicant-info p {
+    font-size: 0.8rem;
+  }
+
+  .accept-btn,
+  .reject-btn {
+    padding: 5px 8px;
+    font-size: 0.8rem;
+  }
+}

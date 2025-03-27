@@ -1,0 +1,62 @@
+/* Main Container with a Multi-Color Gradient */
+.remarks-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3, #667eea); /* Vibrant Purple-Pink */
+    padding: 20px;
+  }
+  
+  /* Card Styling */
+  .remarks-card {
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency for a soft look */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Text Styling for Better Readability */
+  .remarks-title {
+    font-size: 28px;
+    color: #2d3748;
+    margin-bottom: 10px;
+  }
+  
+  .remarks-subtitle {
+    font-size: 18px;
+    color: #4a5568;
+    margin-bottom: 15px;
+  }
+  
+  .highlight {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  /* Skills List */
+  .skills-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .skills-list li {
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .skills-list li:hover {
+    background: #007bff;
+    color: white;
+    transform: scale(1.05);
+  }
+  

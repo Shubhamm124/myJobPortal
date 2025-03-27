@@ -1,0 +1,184 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+#logoimg {
+  width: 10%;
+  border-radius: 50%;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar .links {
+  color: black;
+  font-size: 1.3rem;
+}
+
+.btn-bundle {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-bundle button {
+  width: 100px;
+  margin-left: 10px;
+}
+
+@media (max-width: 991px) {
+  #logoimg {
+    width: 18%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navbar .links {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .button-container .btn {
+    width: 30%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  #logoimg {
+    width: 25%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button-container .btn {
+    width: 50%;
+    margin: 10px 0;
+  }
+
+  .navbar .links {
+    font-size: 1.4rem;
+    margin-top: 10px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.searchbtn button {
+  width: 120px;
+  color: white;
+  background-color: gray;
+  border-radius: 5px;
+  border: none;
+}
+.range-container {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+input[type="range"] {
+  width: 100%;
+}
+.range-values {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+#wrapper {
+  box-shadow: 0px 5px 10px black;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#wrapper:hover {
+  box-shadow: 0px 6px 15px black;
+}
+#desccard i {
+  padding-right: 10px;
+}
+.jobrule {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+.jobrule b {
+  padding-right: 50px;
+  background-color: whitesmoke;
+  margin: 0 5px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.jobs a {
+  color: #36454f;
+  text-decoration: none;
+}
+
+#wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#leftsec span {
+  padding-right: 20px;
+}
+#leftsec img {
+  width: 120px;
+  border-radius: 50%;
+}
+#leftsec i {
+  font-size: 1.5rem;
+  padding: 0 10px;
+  color: whitesmoke;
+}
+#leftsec a {
+  text-decoration: none;
+  color: white;
+}
+#rightsec img {
+  width: 60%;
+}
+#rightsec {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+}

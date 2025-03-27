@@ -1,0 +1,30 @@
+#wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#leftsec span {
+  padding-right: 20px;
+}
+#leftsec img {
+  width: 120px;
+  border-radius: 50%;
+}
+#leftsec i {
+  font-size: 1.5rem;
+  padding: 0 10px;
+  color: whitesmoke;
+}
+#leftsec a {
+  text-decoration: none;
+  color: white;
+}
+#rightsec img {
+  width: 60%;
+}
+#rightsec {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+}
